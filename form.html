@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            form
+        </title>
+    </head>
+    <body>
+        <form action="form.html" method="POST">
+            <fieldset>
+                <legend>Personal Detalis"</legend>
+                <!--The <fieldset> element is used to group related 
+                    data in a form.The <legend> element defines a caption 
+                        for the <fieldset> element.-->
+            <label for="fname">first name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">last name: name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="idnum">Id Number:</label><br>
+            <input type="int" id="idnum" name="idnum"><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">other</label><br>
+            <label for="cars">choose your car:</labe>
+                <select id="cars" name="cars" size="4">
+                    <!--size is used to show values to be displayed
+                    multiple is used to select more than one item by pressing
+                    ctrl and highlighting-->
+                    <option value="subaru">subaru</option>
+                    <option value="audi">audi</option>
+                    <option value="brado">brado</option>
+                    <option value="benz">benz</option>
+                    <option value="vtz">vitz</option>
+                    <option value="range rover">range rover</option>
+                    <option value="nissan">nissan</option>
+                    <option value="caldina">caldina</option>
+                </select><br>
+                <!--The element defines a multi-line input field (a text area)-->
+                    <textarea name="message" rows="10" cols="30">
+                        write your message here
+                    </textarea>
+            
+            <input type="submit" value="submit">
+        </fieldset>
+            
+        </form>
+    </body>
+</html>
